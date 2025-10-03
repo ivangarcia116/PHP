@@ -9,7 +9,7 @@
 
 <body>
 
-    <h1>¡Piedra,papel,tijera!</h1>
+    <h1>¡Piedra, papel, tijera!</h1>
 
     <?php
 
@@ -23,8 +23,7 @@
     $jugador1 = $valores[array_rand($valores)];
     $jugador2 = $valores[array_rand($valores)];
 
-    function logoJuego($opcion, $jugador)
-    {
+    function logoJuego($opcion, $jugador) {
 
         switch ($opcion) {
 
@@ -33,7 +32,9 @@
                 if ($jugador == 1) {
 
                     return PIEDRA1;
-                } else {
+                } 
+                
+                else {
 
                     return PIEDRA2;
                 }
@@ -49,8 +50,7 @@
         }
     }
 
-    function obtenerResultado($resultadoJugador1, $resultadoJugador2)
-    {
+    function obtenerResultado($resultadoJugador1, $resultadoJugador2) {
 
         if ($resultadoJugador1 == $resultadoJugador2) {
 
@@ -81,15 +81,16 @@
 
     <body style="font-size: 50px; text-align: center;">
 
-        <h2>Juego: Piedra, Papel o Tijera</h2>
+        <p>Actualize la página para mostrar otra partida.</p>
 
         <p>
             Jugador 1: <?= logoJuego($jugador1, 1) ?>
-            vs
+            
             Jugador 2: <?= logoJuego($jugador2, 2) ?>
         </p>
 
         <h3><?= obtenerResultado($jugador1, $jugador2) ?></h3>
 
-</body>
-</html>
+    </body>
+
+    </html>

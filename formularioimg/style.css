@@ -1,0 +1,133 @@
+body {
+    background: silver;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #000;
+}
+
+.form-container {
+    background: #fff;
+    width: 500px;
+    margin: 20px auto; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left; 
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+fieldset {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left; 
+}
+
+.botones {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0066cc;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #004c99;
+}
+
+
+.resultado {
+    background: #fff500; 
+    border-radius: 10px;
+    padding: 20px 25px;
+    width: 650px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.resultado h2 {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.resultado-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.resultado .datos {
+    flex: 1;
+}
+
+.resultado .datos p {
+    margin: 6px 0;
+    font-size: 16px;
+    color: #000;
+}
+
+.resultado .datos strong {
+    color: #000;
+}
+
+.resultado .imagen {
+    width: 200px;
+    text-align: center;
+}
+
+.resultado .imagen p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.resultado .imagen img {
+    border: 2px solid #333;
+    border-radius: 4px;
+    width: 150px;
+    height: auto;
+}
+
+.resultado .error {
+    color: rgb(228, 83, 83);
+    font-weight: bold;
+    margin-top: 10px;
+}
